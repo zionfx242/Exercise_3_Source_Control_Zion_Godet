@@ -1,0 +1,58 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  position: relative;
+  display: block;
+}
+
+p {
+  font-size: 120%; 
+}
+
+p.important {
+  border-style: solid; 
+  display: inline-block; 
+  border-width: 5px; 
+  border-color: greenyellow;
+}
+
+.center {
+  display: block; 
+  margin: auto;
+}
+
+.centerText:hover {
+  color: greenyellow;
+  text-decoration: underline;
+}
+
+figure {
+  font-style: italic;
+  font-size: smaller;
+}
+
+figcaption {
+  caption-side:bottom;
+}
+
+img {
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.technologies {
+  display: block;
+}
+
+.extra {
+  color: black;
+}
+
+.extra:hover {
+color: greenyellow;
+}
