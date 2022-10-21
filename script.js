@@ -34,8 +34,8 @@ console.log("PI: " + PI);
 // always use const when you know the value should not be changed
 //using camelCase is the most common way of naming variables
 
-var firstName = "Dylan";
-var lastName = "Ravka";
+var firstName = "Zion";
+var lastName = "Godet";
 
 let fullName = firstName + " " + lastName;
 
