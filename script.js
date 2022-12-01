@@ -39,7 +39,7 @@ var lastName = "Godet";
 
 let fullName = firstName + " " + lastName;
 
-console.log("First Name: " + firstName + " Last Name: " + lastName);
+console.log("First Name: " + firstName + "\n" + "Last Name: " + lastName);
 console.log("Full Name: " + fullName);
 
 console.log("X: " + x + "\n" + "Y: " + y + "\n" + "Z: " + z);
@@ -54,9 +54,39 @@ incrementNum++;
 
 console.log("the incremented number: " + incrementNum);
  
-function myClickFunction() {
-  console.log("The button was Clicked");
+/* function myClickFunction() {
+  console.log("The button was clicked");
   document.getElementById("myButton").style.color = "red";
   document.body.style.backgroundColor = "#FFFFFF";
   document.body.style.color = "blue";
-}
+} */
+
+// Jquery Scripts
+
+// Text Color Change (Replaces JavaScript Color Scripts)
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#myButton").css("color", "red"),
+    $("body").css("backgroundColor", "#FFFFFF"),
+    $("body").css("color", "blue")
+  });
+
+  console.log("The button was clicked");
+  
+  $("button").click(function(){
+    $("img").toggle();
+  });
+}); 
+
+// Hide Image
+$("img").click(function(){
+  $("img").toggle();
+});
+
+// Hover Over Last (Extra) Text (Replaces CSS :hover style)
+$(".extra").hover(function(){
+  $(this).css("color", "greenyellow"),
+    $(".extra").mouseleave(function(){
+      $(this).css("color", "black");
+    });
+});
